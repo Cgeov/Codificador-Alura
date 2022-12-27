@@ -1,0 +1,189 @@
+*{
+   margin-inline: 0;
+}
+body{
+    background-color: #F3F5FC;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+.contenedor{
+    display: flex;
+    flex-flow: wrap row;
+    gap: 2%;
+    width: 100%;
+    font-family: Inter;
+}
+.parte1{
+    width: 70%;
+}
+.parte2{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 32px;
+    padding-block: 30px;
+    padding-inline: 20px;
+    height: auto;
+}
+#Inputexto{
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    color: #0A3871;
+    width: 100%;
+    height: 55vh;
+    font-size: 32px;
+    line-height: 150%;
+    padding: 0.4em 0.4em 0.4em 0;
+}
+#Inputexto:focus {
+    border: 0;
+}
+#Inputexto::placeholder {
+    color: #0A3871;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+    align-items: flex-start;
+}
+.button1{
+    background-color: #0A3871;
+    border-radius: 32px;
+    color: white;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+    cursor:pointer;
+}
+.button2{
+    background-color: #D8DFE8;
+    border-radius: 32px;
+    color: #0A3871;;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+    cursor:pointer;
+}
+.button3{
+    background-color: transparent;
+    border-radius: 32px;
+    color: #0A3871;;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 24px;
+    width: 328px;
+    height: 67px;
+    display: none;
+    cursor:pointer;
+    width: 80%;
+
+}
+.info{
+    margin-block: 20px;
+}
+textarea {
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.ImgResult{
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+.button1:hover{
+    background-color: #072B61;
+}
+.button2:hover{
+    background-color: #CED4DC;
+}
+.button3:hover{
+    background-color: #F5F7FB;
+}
+
+.espacio{
+    padding-left: 20%;
+}
+
+footer{
+    position: absolute;
+    background-color: #0A3871;
+    color: #F3F5FC;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1024px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .parte1{
+        width: 95%;
+    }
+    .parte2{
+        margin-top: 5%;
+        width: 95%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    .ImgResult{
+        display: none;
+    }
+    .espacio{
+        padding-left: 5%;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .parte1{
+        width: 95%;
+    }
+    .parte2{
+        margin-top: 5%;
+        width: 85%;
+        height: auto;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .button1{
+        width: 100%;
+    }
+    .button2{
+        width: 100%;
+    }
+    .ImgResult{
+        display: none;
+    }
+    .espacio{
+        padding-left: 5%;
+    }
+}
