@@ -129,6 +129,40 @@ footer{
     bottom: 0;
 }
 
+.alert {
+    padding-top: 5px;
+    background-color: #0A3871;
+    color: white;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    margin-right: 2%;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+  #Progress_Status {
+    margin-top: 1vh;
+    width: 100%;
+    background-color: #CED4DA;
+  }
+    
+  #myprogressBar {
+    width: 2%;
+    height: 5px;
+    background-color: #072B61;
+  }
+
 @media screen and (max-width: 1024px){
     .contenedor{
         display: flex;
